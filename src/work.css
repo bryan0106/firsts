@@ -1,0 +1,131 @@
+
+.workmc{
+    width: 100%;
+    max-width: 100% ;
+    display: flex;
+   
+
+}
+
+.workleft {
+width: 50%;
+box-sizing: border-box;
+padding: 1px;
+margin-top: 10px;
+justify-items: self-end;
+}
+.workright{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1px;
+}
+.whead{
+    background-color: rgb(0, 0, 0);
+    opacity: .5;
+    color: aliceblue;
+}
+.wlcon{
+    width: 70%;
+    height: auto;
+    font-size: smaller  ;
+}
+.skt{
+border-bottom: 1px solid;
+
+}
+.workcon{
+    display: flex;
+    position: relative;
+    width: 70%;
+    height:  auto;
+   margin-left: 3%;
+}
+.workt:hover{
+   border: 1px solid black  ;
+   border-radius: 10px;
+    color: rgb(0, 0, 0);
+   
+}
+
+.workcon1{
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+    height: auto;
+   margin-left: 3%;
+}
+
+.workcon::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: blue;
+    height: 100%;
+   top: 20px;
+    }
+.workcr{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left:-10px;
+    top: 15px;
+  bottom: 3%;
+    background-color: blue;
+}
+.workt{
+    width:90% ;
+    height: auto;
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .workmc{
+        width: 100%;
+        max-width: 100% ;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .workleft {
+        width: 100%;
+    display:block;
+    justify-items: center;
+        }
+        .wlcon{
+            width: 70%;
+            height: auto;
+            font-size: x-small;
+        }
+
+ .workright{
+            width: 100%;
+            display:block;
+    justify-items: center;
+    }
+    .workcon1{
+        width: 70%;
+        height: auto;
+       margin-left: 4%;
+    }
+    .workcon{
+        position: relative;
+        width: 70%;
+        height: auto;
+       margin-left: 4%;
+    }
+    .workcon::after{
+        content: '';
+        position:absolute;
+        width: 2px;
+        background-color:  blue;
+        height:100%;
+        z-index: 10;
+        margin-top: 10px;
+       
+        }
+
+
+
+}
+

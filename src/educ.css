@@ -1,0 +1,111 @@
+
+
+
+
+.ed{
+  
+width: 60%;
+height: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.cir{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: -22px;
+    top: 15px;
+    z-index:10 ;
+    background-color: rgb(19, 24, 165);
+}
+.cir1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: -22px;
+    top: -5px;
+    z-index:10 ;
+    background-color: rgb(46, 44, 171);
+}
+.scon{
+   padding-left: 9%;
+    margin-top: -2px;
+    word-spacing:5px;
+    line-height: 25px;
+
+}
+.sch1, .sch{
+    position: relative;
+    display: flex;
+    width: 50%;
+    margin-left: 2%;
+}
+.sch1::after{
+content: '';
+position: absolute;
+width: 6px;
+background-color: black;
+height: 100%;
+left:0;
+top: 30px;
+}
+@media (max-width: 768px) {
+    .ed{
+  
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        }
+        .sch1, .sch{
+            position: relative;
+            display: flex;
+            width:95%;
+            margin-left: 4%;
+        }
+        .sch1::after{
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: black;
+            height: 100%;
+            left:0;
+            top: 30px;
+            }
+            .cir{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                left: -13px;
+                top: 15px;
+                z-index:10 ;
+                background-color: rgb(19, 24, 165);
+            }
+            .cir1{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                left: -22px;
+                top: -5px;
+                z-index:10 ;
+                background-color: rgb(46, 44, 171);
+            }
+            .scon{
+                padding-left: 8%;
+                margin-top: -2px;
+                word-spacing:5px;
+                line-height:25px;
+                width: 80%;
+            }
+            
+
+
+}

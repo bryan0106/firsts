@@ -1,0 +1,213 @@
+.section-container{
+width: 100%;
+max-width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: center;
+}
+.first
+{
+width: 100%;
+max-width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.second
+{
+width: 50%;
+max-width: 100%;
+display: flex;
+flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.conta1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.conta4{
+    width: 50%;
+    box-sizing: border-box;
+    padding-right:20px;
+}
+.conta2{
+    width: 40%;
+    box-sizing: border-box;
+    font-size: small;
+    padding-left: 10px;
+}
+.conta2 h3, h4
+{
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+.conta2 h3{ width: 50%; border-bottom: 1px solid black;}
+
+.conta3, .cont{
+    width: 80%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+
+   
+}
+.conta3 p, img.skill
+{
+    margin-top: 2px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+
+.first img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.prog {
+    width: 80%;
+    background-color: #a1a2a4;
+    height: 10px;
+  }
+  
+  .barIn{width: 70%; height: 9px; background-color: #2196F3;}
+  .barPh{width: 70%; height: 9px; background-color: #2196F3;}
+  .barSoc{width: 50%; height: 9px; background-color: #2196F3;}
+  .barSp{width: 40%; height: 9px; background-color: #2196F3;}
+
+
+  .conta3 .skill
+  {
+    margin-top: 0;
+    width: 40px; /* Adjust width */
+    height: 40px; 
+  }
+
+
+.cont p{
+    text-align: justify;
+    line-height: 1.5; /* Adjust as needed (e.g., 1.4, 1.6) */
+    letter-spacing: 0.05em;
+}
+
+
+
+.cva{
+    width: 100%;max-width: 100%;height: 650px;
+    border-radius: 0;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cva img{
+    width: 500px;
+    border-radius: 0;
+    height: 650px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.cra{
+    width: 100%;max-width: 100%;height: auto;
+    display:flex;
+    flex-direction: column; /* Stack image and text vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items horizontally (cross-axis) */
+    text-align: center; /* Center the text within its own block */
+}
+.cra img{
+    width: 30%;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto;  border-radius: 0;
+    display: block; /* Prevent inline spacing issues */
+    margin-bottom: 10px; /* Add some space between image and text (adjust as needed) */
+}
+
+
+
+
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .first,
+    .second, .conta1{
+      width: 100%; /* Make both columns take full width on smaller screens */
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      
+    }
+    .conta3 .conta2
+    {
+        width: 100px;
+    }
+    .conta4{
+        width: 100%;
+        box-sizing: border-box;
+        justify-items: center ;
+    }
+    .conta2{
+        width: 60%;
+        box-sizing: border-box;
+        font-size: small;
+        padding-left: 10px;
+        
+
+    }
+
+
+    .cva{
+        width: 100%;max-width: 100%;height: 500px;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    .cva img{
+        width: 90%;
+        border-radius: 0;
+        height: 480px;
+        margin-right: 10px;
+    }
+   
+.cra{
+    width: 100%;max-width: 100%;height: auto;
+    display:flex;
+    flex-direction: column; /* Stack image and text vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items horizontally (cross-axis) */
+    text-align: center; /* Center the text within its own block */
+}
+.cra img{
+    width: 60%;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto;  border-radius: 0;
+    display: block; /* Prevent inline spacing issues */
+    margin-bottom: 10px; /* Add some space between image and text (adjust as needed) */
+}
+
+
+
+
+    .cont h1{height: 100px;}
+    #cv h1{height: 100px;}
+
+
+
+  }

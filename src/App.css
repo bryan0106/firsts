@@ -1,31 +1,176 @@
-.App {
-  text-align: center;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.front-load-page-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 50;
 }
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.loading-text {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.progress-bar-container {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.progress-bar-background {
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 0.5rem;
+}
+
+.progress-bar-fill {
+  background-color: #3b82f6;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #353535;
+}
+
+.main-content-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction:column; /* Changed to column */
+  align-content: start;
+  margin-top: 46px;
+  justify-content:flex-start;
+}
+
+.profile-container {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; /* To position it relative to its closest positioned ancestor */
+  top: 0; /* Stick it to the top */
+  left: 50%; /* Center it horizontally (initially) */
+  transform: translateX(-50%); /* Adjust for the element's width to truly center */
+   margin-top: 20px; 
+  /* margin-bottom: 20px; Remove bottom margin (if it was there) */
+}
+
+.profile-picture {
+  width: 300px; /* Adjust as needed */
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #374151; /* Dark gray */
+  margin-bottom: 1px;
+}
+
+.profile-career {
+  font-size: 1rem;
+  color: #6b7280; /* Gray */
+  margin-bottom: 1px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  width: auto; /* Adjust width based on content */
+  max-width: 20rem; /* Maximum width */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  align-items: flex-start; /* Align items to the left horizontally */
+  gap: 1px; /* Add some space between the lines (optional) */
+}
+
+.contact-info2 {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  width: auto; /* Adjust width based on content */
+  max-width: 20rem; /* Maximum width */
+  position: fixed;
+  bottom: 20px;
+  right : 20px;
+  align-items: flex-start; /* Align items to the left horizontally */
+  gap: 1px; /* Add some space between the lines (optional) */
+}
+
+
+@media (max-width: 600px) {
+  .contact-info,
+  .contact-info2 {
+    position: fixed;
+    left: 20px; /* Both aligned to the left */
+    right: auto; /* Reset right alignment */
+    width: auto; /* Adjust width */
+    max-width: calc(100% - 40px); /* Take up most of the screen width with some padding */
   }
-  to {
-    transform: rotate(360deg);
+
+  .contact-info {
+    bottom: 12%; /* Move the first one up */
+  }
+
+  .contact-info2 {
+    bottom: 1%; /* Keep the second one at the bottom */
   }
 }
+
+
+.contact-details {
+  text-align: left;
+}
+
+.social-links {
+  text-align: left;
+}
+
+.social-links a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+
+
+.social-icons {
+ 
+  display: flex;
+  gap: 0.5rem; /* Adjust spacing between icons */
+}
+img {
+  padding: 10px; /* Adjust padding */
+  font-size: 20px; /* Adjust icon size */
+  width: 20px; /* Adjust width */
+  height: 20px; /* Adjust height */
+  text-align: center;
+  text-decoration: none;
+  margin: 0; /* Remove default margins */
+  border-radius: 50%; /* Make them circular */
+  display: inline-flex; /* Center the icon inside the circle */
+  justify-content: center;
+  align-items: center;
+}
+
+
